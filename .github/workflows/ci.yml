@@ -18,6 +18,6 @@ jobs:
         with:
           go-version: "1.26.0"
 
-      - name: Go version check
-        run: go version
+      - name: Run tests
+        run: go test ./...
       
