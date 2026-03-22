@@ -37,8 +37,11 @@ jobs:
         with:
           go-version: "1.26.0"
           
-      - name: Check style
+      - name: test -z
         run: test -z $(go fmt ./...)
+
+      - name: go fmt
+        run:  $(go fmt ./...)
 
 
       
